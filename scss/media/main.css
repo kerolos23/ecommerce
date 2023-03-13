@@ -1,0 +1,505 @@
+@media (max-width: 575.98px) {
+  header {
+    padding-left: 3.5em;
+    padding-right: 1em;
+    width: unset;
+  }
+  header .links {
+    position: relative;
+    width: unset;
+  }
+  header .links .logo a {
+    font-size: 1.2em;
+  }
+  header .links .open {
+    left: 0;
+  }
+  header .links nav {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    z-index: 998;
+    flex-direction: column;
+    width: 14em;
+    gap: 2em;
+    padding-top: 7em;
+    align-items: flex-start;
+    padding-left: 3em;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+  }
+  header .links nav a {
+    font-weight: 800;
+    color: #000;
+  }
+  header .links nav .hamburger {
+    display: flex;
+    position: fixed;
+    left: 0.9em;
+    top: 2em;
+    width: 1.7em;
+    height: 4%;
+    border: none;
+    align-items: center;
+    padding: 0;
+    flex-direction: column;
+    background-color: transparent;
+  }
+  header .links nav .bar1, header .links nav .bar2, header .links nav .bar3 {
+    display: flex;
+    width: 100%;
+    height: 0.3em;
+    background: #020202;
+    padding: 0;
+    margin: 0;
+    transition: 0.7s ease;
+  }
+  header .links nav .bar1, header .links nav .bar2 {
+    margin-bottom: 20%;
+  }
+  header .links nav .rotate1, header .links nav .rotate2 {
+    display: flex;
+    width: 100%;
+    height: 0.3em;
+    background: #222;
+    padding: 0;
+    margin: 0;
+    transition: 0.7s ease;
+  }
+  header .links nav .rotate1 {
+    transform: rotate(45deg);
+  }
+  header .links nav .rotate2 {
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+  header .links nav .opacity {
+    opacity: 0;
+  }
+  header .avtive {
+    width: 7em;
+  }
+  header .avtive .user {
+    width: 2em;
+    height: 2.9em;
+  }
+  header .avtive .cart .view-cart {
+    width: 18em;
+    right: 12px;
+    z-index: 999;
+  }
+  header .avtive .cart .view-cart .product .text-area {
+    width: 64%;
+  }
+  header .avtive .cart .view-cart .product .text-area p {
+    font-size: 0.7em;
+  }
+  header .avtive .cart .view-cart .product .text-area .sallary {
+    gap: 1em;
+  }
+  section {
+    flex-direction: column;
+    padding-top: 0;
+    width: 100%;
+  }
+  section .product {
+    width: unset;
+    height: 50%;
+    padding-bottom: 1.5em;
+  }
+  section .product .view {
+    height: 20em;
+    border-radius: unset;
+    width: 100%;
+  }
+  section .product .view img {
+    border-radius: unset;
+    -webkit-border-radius: unset;
+    -moz-border-radius: unset;
+    -ms-border-radius: unset;
+    -o-border-radius: unset;
+  }
+  section .info {
+    width: unset;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    padding-right: 0.8em;
+    padding-bottom: 2em;
+  }
+  section .info h2 {
+    font-size: 2.2em;
+  }
+  section .info p {
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+  section .info .buy button {
+    width: 80%;
+  }
+  .alert {
+    width: 15em;
+    z-index: 999;
+  }
+  .alert .done .alert-text p {
+    font-size: 0.8em;
+  }
+  .buy-section h2 {
+    font-size: 7em;
+  }
+  .buy-section p {
+    font-size: 1em;
+  }
+  .buy-section .btn {
+    flex-direction: column;
+    width: 100%;
+    height: 7em;
+    gap: 2em;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    padding-left: 3.5em;
+    padding-right: 1em;
+    width: unset;
+  }
+  header .links {
+    position: relative;
+    width: unset;
+  }
+  header .links .logo a {
+    font-size: 1.2em;
+  }
+  header .links .open {
+    left: 0;
+  }
+  header .links nav {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    z-index: 998;
+    flex-direction: column;
+    width: 14em;
+    gap: 2em;
+    padding-top: 7em;
+    align-items: flex-start;
+    padding-left: 3em;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+  }
+  header .links nav a {
+    font-weight: 800;
+    color: #000;
+  }
+  header .links nav .hamburger {
+    display: flex;
+    position: fixed;
+    left: 0.9em;
+    top: 2em;
+    width: 1.7em;
+    height: 4%;
+    border: none;
+    align-items: center;
+    padding: 0;
+    flex-direction: column;
+    background-color: transparent;
+  }
+  header .links nav .bar1, header .links nav .bar2, header .links nav .bar3 {
+    display: flex;
+    width: 100%;
+    height: 0.3em;
+    background: #020202;
+    padding: 0;
+    margin: 0;
+    transition: 0.7s ease;
+  }
+  header .links nav .bar1, header .links nav .bar2 {
+    margin-bottom: 20%;
+  }
+  header .links nav .rotate1, header .links nav .rotate2 {
+    display: flex;
+    width: 100%;
+    height: 0.3em;
+    background: #222;
+    padding: 0;
+    margin: 0;
+    transition: 0.7s ease;
+  }
+  header .links nav .rotate1 {
+    transform: rotate(45deg);
+  }
+  header .links nav .rotate2 {
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+  header .links nav .opacity {
+    opacity: 0;
+  }
+  header .avtive {
+    width: 7em;
+  }
+  header .avtive .user {
+    width: 2em;
+    height: 2.9em;
+  }
+  header .avtive .cart .view-cart {
+    width: 22em;
+    right: 12px;
+    z-index: 999;
+  }
+  header .avtive .cart .view-cart .product .text-area {
+    width: 64%;
+  }
+  header .avtive .cart .view-cart .product .text-area p {
+    font-size: 0.9em;
+  }
+  header .avtive .cart .view-cart .product .text-area .sallary {
+    gap: 1em;
+  }
+  section {
+    flex-direction: column;
+    padding-top: 0;
+    width: 100%;
+  }
+  section .product {
+    width: unset;
+    height: 50%;
+    padding-bottom: 1.5em;
+  }
+  section .product .view {
+    height: 30em;
+    border-radius: unset;
+    width: 100%;
+  }
+  section .product .view img {
+    border-radius: unset;
+    -webkit-border-radius: unset;
+    -moz-border-radius: unset;
+    -ms-border-radius: unset;
+    -o-border-radius: unset;
+  }
+  section .info {
+    width: unset;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    padding-right: 0.8em;
+    padding-bottom: 2em;
+  }
+  section .info h2 {
+    font-size: 2.4em;
+  }
+  section .info p {
+    line-height: 1.5em;
+    font-size: 1.3em;
+  }
+  section .info .buy button {
+    width: 80%;
+  }
+  .alert {
+    width: 21em;
+    z-index: 999;
+  }
+  .alert .done .alert-text p {
+    font-size: 0.9em;
+  }
+  .buy-section h2 {
+    font-size: 7em;
+  }
+  .buy-section p {
+    font-size: 1em;
+  }
+  .buy-section .btn {
+    flex-direction: column;
+    width: 100%;
+    height: 7em;
+    gap: 2em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header {
+    padding-left: 3.5em;
+    padding-right: 1em;
+    width: unset;
+  }
+  header .links {
+    position: relative;
+    width: unset;
+  }
+  header .links .logo a {
+    font-size: 1.2em;
+  }
+  header .links .open {
+    left: 0;
+  }
+  header .links nav {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    z-index: 998;
+    flex-direction: column;
+    width: 14em;
+    gap: 2em;
+    padding-top: 7em;
+    align-items: flex-start;
+    padding-left: 3em;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+  }
+  header .links nav a {
+    font-weight: 800;
+    color: #000;
+  }
+  header .links nav .hamburger {
+    display: flex;
+    position: fixed;
+    left: 0.9em;
+    top: 2em;
+    width: 1.7em;
+    height: 4%;
+    border: none;
+    align-items: center;
+    padding: 0;
+    flex-direction: column;
+    background-color: transparent;
+  }
+  header .links nav .bar1, header .links nav .bar2, header .links nav .bar3 {
+    display: flex;
+    width: 100%;
+    height: 0.3em;
+    background: #020202;
+    padding: 0;
+    margin: 0;
+    transition: 0.7s ease;
+  }
+  header .links nav .bar1, header .links nav .bar2 {
+    margin-bottom: 20%;
+  }
+  header .links nav .rotate1, header .links nav .rotate2 {
+    display: flex;
+    width: 100%;
+    height: 0.3em;
+    background: #222;
+    padding: 0;
+    margin: 0;
+    transition: 0.7s ease;
+  }
+  header .links nav .rotate1 {
+    transform: rotate(45deg);
+  }
+  header .links nav .rotate2 {
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+  header .links nav .opacity {
+    opacity: 0;
+  }
+  header .avtive {
+    width: 7em;
+  }
+  header .avtive .user {
+    width: 2em;
+    height: 2.9em;
+  }
+  header .avtive .cart .view-cart {
+    width: 22em;
+    right: 12px;
+    z-index: 999;
+  }
+  header .avtive .cart .view-cart .product .text-area {
+    width: 64%;
+  }
+  header .avtive .cart .view-cart .product .text-area p {
+    font-size: 0.9em;
+  }
+  header .avtive .cart .view-cart .product .text-area .sallary {
+    gap: 1em;
+  }
+  section {
+    flex-direction: column;
+    padding-top: 0;
+    width: 100%;
+  }
+  section .product {
+    width: unset;
+    height: 50%;
+    padding-bottom: 1.5em;
+  }
+  section .product .view {
+    height: 30em;
+    border-radius: unset;
+    width: 100%;
+  }
+  section .product .view img {
+    border-radius: unset;
+    -webkit-border-radius: unset;
+    -moz-border-radius: unset;
+    -ms-border-radius: unset;
+    -o-border-radius: unset;
+  }
+  section .info {
+    width: unset;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    padding-right: 0.8em;
+    padding-bottom: 2em;
+  }
+  section .info h2 {
+    font-size: 2.8em;
+  }
+  section .info p {
+    line-height: 1.5em;
+    font-size: 1.6em;
+  }
+  section .info .buy button {
+    width: 80%;
+  }
+  .alert {
+    width: 21em;
+    z-index: 999;
+  }
+  .alert .done .alert-text p {
+    font-size: 0.9em;
+  }
+  .buy-section h2 {
+    font-size: 7em;
+  }
+  .buy-section p {
+    font-size: 1em;
+  }
+  .buy-section .btn {
+    flex-direction: column;
+    width: 100%;
+    height: 7em;
+    gap: 2em;
+  }
+}
+@media (min-width: 992px) and (max-width: 1316px) {
+  header .links {
+    width: 65%;
+  }
+}
+@media (min-width: 1439.98px) {
+  section .info h3 {
+    font-size: 1.3em;
+  }
+  section .info h2 {
+    font-size: 2.7em;
+  }
+  section .info p {
+    font-size: 1.4em;
+  }
+}/*# sourceMappingURL=main.css.map */

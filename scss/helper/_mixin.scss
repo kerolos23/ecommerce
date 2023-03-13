@@ -1,0 +1,22 @@
+///
+/// 
+/// 
+
+@mixin popup ($background, $border-color, $r-l-postion){
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    right: $r-l-postion;
+    top: 1em;
+    width: 21em;
+    height: 3.6em;
+    background: $background;
+    border-radius: 1em;
+    border: 2px solid $border-color;
+    padding: 0.5em;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}

@@ -1,0 +1,20 @@
+@use "./helper/mixin"  as *;
+
+@media (max-width: 575.98px){
+    @include media(2.2em, 1em, 20em, 18em, 12px, .7em, 64%, 15em, 0.8em);
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    @include media(2.4em, 1.3em, 30em, 22em, 12px, .9em, 64%, 21em, 0.9em);
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    @include media(2.8em, 1.6em, 30em, 22em, 12px, .9em, 64%, 21em, 0.9em);
+}
+
+@media (min-width: 992px) and (max-width: 1316px) {
+    @include media-md()
+}
+@media (min-width: 1439.98px){
+    @include media-lg()
+}

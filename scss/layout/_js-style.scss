@@ -1,0 +1,76 @@
+@use "../helper/var" as *;
+@use "../helper/mixin" as *;
+
+.view-cart {
+    .product{
+        display: flex;
+        flex-direction: row;
+        gap: 0.9em;
+        height: 4em;
+        width: 97%;
+        align-items: center;
+        .check-img{
+            display: flex;
+            width: 4.5em;
+            height: 4em;
+            img{
+                width: 100%;
+                border-radius: .5em;
+                -webkit-border-radius: .5em;
+                -moz-border-radius: .5em;
+                -ms-border-radius: .5em;
+                -o-border-radius: .5em;
+            }
+        }
+        .text-area {
+            display: flex;
+            flex-direction: column;
+            width: 66%;
+            .paragraph{
+                p{
+                    font-size: 1.1em;
+                    font-weight: 500;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    color: #b6bcc8;
+                }
+            }
+            .sallary{
+                display: flex;
+                flex-direction: row;
+                height: 2.5em;
+                align-items: center;
+                gap: 2em;
+                p{
+                    margin: 0;
+                    font-size: 1.1em;
+                    color: #b6bcc8;
+                    font-weight: 500;
+                }
+                h2{
+                    margin: 0;
+                }
+            }
+        }
+        .btn-delete {
+            cursor: pointer;
+        }
+    }
+    .cart-text{
+        .check-out{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 3em;
+            background-color: #ff7d1a;
+            border-radius: 0.9em;
+            a{
+                color: #fff;
+                font-weight: 900;
+                letter-spacing: .3em;
+                text-decoration: none;
+            }
+        }
+    }
+}

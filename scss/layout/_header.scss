@@ -1,0 +1,152 @@
+@use "../helper/var" as *;
+@use "../helper/mixin" as *;
+/*js header styles*/
+.open-cart{
+    opacity: 1;
+    visibility: visible;
+    top: 3em;
+}
+/*End header js styles*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5em;
+    padding-left: 8em;
+    border-bottom: 1px solid #b6bcc8;
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        .logo{
+            a {
+                text-decoration: none;
+                font-size: 1.4em;
+                letter-spacing: -1px;
+                color: #000;
+            }
+        }
+        nav{
+            display: flex;
+            gap: 1em;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: #68707d;
+                font-weight: 400;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 50%;
+                    height: 2px;
+                    background: orange;
+                    left: 25%;
+                    bottom: -7px;
+                    opacity: 0;
+                    transition: .5s ease;
+                    -webkit-transition: .5s ease;
+                    -moz-transition: .5s ease;
+                    -ms-transition: .5s ease;
+                    -o-transition: .5s ease;
+                }
+                &:hover{
+                    color: #000;
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .avtive{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 20%;
+        .cart{
+            button {
+                display: flex;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                position: relative;
+                .pord-count{
+                    display: flex;
+                    position: absolute;
+                    min-width: 1.9em;
+                    min-height: 1.3em;
+                    border-radius: 50%;
+                    -webkit-border-radius: 1em;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    background-color: #ff7d1a;
+                    justify-content: center;
+                    align-items: center;
+                    top: -15px;
+                    right: -10px;
+                    color: #fff;
+                    font-weight: 800;
+                    transition: .5s ease;
+                    -webkit-transition: .5s ease;
+                    -moz-transition: .5s ease;
+                    -ms-transition: .5s ease;
+                    -o-transition: .5s ease;
+                }
+            }
+            .view-cart {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                width: 25em;
+                right: 9%;
+                top: 9em;
+                background: #fff;
+                height: 20em;
+                overflow: scroll;
+                overflow-x: hidden;
+                &::-webkit-scrollbar{width: 0px;}
+                border-radius: 1em;
+                box-shadow: 0px 4px 18px -4px #333333;
+                opacity: 0;
+                visibility: hidden;
+                transition: .5s ease;
+                -webkit-transition: .5s ease;
+                -moz-transition: .5s ease;
+                -ms-transition: .5s ease;
+                -o-transition: .5s ease;
+                .cart-title {
+                    display: flex;
+                    padding-left: 2em;
+                    border-bottom: 1px solid #b6bcc8;
+                }
+                .cart-text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 75%;
+                    gap: 1em;
+                    padding-bottom: 1.5em;
+                }
+            }
+            .open-cart{
+                /*this class for show cart window by js*/
+                opacity: 1;
+                visibility: visible;
+                top: 6em;
+            }
+        }
+        .user{
+            width: 30%;
+            height: 4.3em;
+            display: flex;
+            cursor: pointer;
+        }
+    }
+}

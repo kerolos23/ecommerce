@@ -1,0 +1,161 @@
+@use "../helper/var" as *;
+@use "../helper/mixin" as *;
+
+section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3em;
+    .product{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        .view{
+            display: flex;
+            width: 60%;
+            height: 68%;
+            border-radius: 1em;
+            position: relative;
+            img{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border-radius: 1em;
+                -webkit-border-radius: 1em;
+                -moz-border-radius: 1em;
+                -ms-border-radius: 1em;
+                -o-border-radius: 1em;
+                opacity: 0;
+                transition: opacity 1s ease;
+                -webkit-transition: opacity 1s ease;
+                -moz-transition: opacity 1s ease;
+                -ms-transition: opacity 1s ease;
+                -o-transition: opacity 1s ease;
+            }
+            .active{
+                opacity: 1;
+            }
+        }
+        .littel-view{
+            display: flex;
+            gap: 2em;
+            margin-top: 2em;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 11.5%;
+                border-radius: 1em;
+                -webkit-border-radius: 1em;
+                -moz-border-radius: 1em;
+                -ms-border-radius: 1em;
+                -o-border-radius: 1em;
+                opacity: .6;
+                transition: transform 1s ease;
+                -webkit-transition: transform 1s ease;
+                -moz-transition: transform 1s ease;
+                -ms-transition: transform 1s ease;
+                -o-transition: transform 1s ease;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                    opacity: .8;
+                }
+            }
+            .active{
+                border: 2px solid #ff7d1a;
+                filter: drop-shadow(2px 4px 6px #000);
+                opacity: 1;
+                &:hover{
+                    transform: scale(1);
+                    -webkit-transform: scale(1);
+                    -moz-transform: scale(1);
+                    -ms-transform: scale(1);
+                    -o-transform: scale(1);
+                    opacity: 1;
+}
+            }
+        }
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        padding-top: 3em;
+        h3{
+            font-size: 1em;
+            color: #ff7d1a;
+            margin: 0;
+        }
+        h2{
+            font-size: 2.2em;
+            margin-top: 0.5em;
+            margin-bottom: 0.4em;
+        }
+        p{
+            color:#b6bcc8;
+            line-height: 1.3em;
+        }
+        h2:last-of-type{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1em;
+            height: 0.9em;
+            font-size: 2em;
+            p{
+                font-size: 0.7em;
+                color: #ff7d1a;
+                background: #ffede0;
+                padding: 0.2em 0.8em 0.2em 0.8em;
+                border-radius: 0.5em;
+                -webkit-border-radius: 0.5em;
+                -moz-border-radius: 0.5em;
+                -ms-border-radius: 0.5em;
+                -o-border-radius: 0.5em;
+            }
+        }
+        h3:last-of-type{
+            font-size: 1.5em;
+            text-decoration: line-through;
+            color: #b6bcc8;
+            font-weight: 500;
+        }
+        .buy {
+            display: flex;
+            gap: 2em;
+            margin-top: 3em;
+            align-items: center;
+            button{
+                display: flex;
+                border: none;
+                cursor: pointer;
+                background: #ff7d1a;
+                width: 15em;
+                height: 2.9em;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0.7em;
+                gap: 2.5em;
+                font-weight: 800;
+                color: #fff;
+                transition: .3s ease;
+                -webkit-transition: .3s ease;
+                -moz-transition: .3s ease;
+                -ms-transition: .3s ease;
+                -o-transition: .3s ease;
+            }
+            .disabled {
+                background: #fc8123b6;
+                cursor: no-drop;
+            }
+        }
+    }
+}
+
+/*js styles*/

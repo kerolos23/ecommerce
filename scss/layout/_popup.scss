@@ -1,0 +1,26 @@
+@use "../helper/var" as *;
+@use "../helper/mixin" as *;
+
+.alert {
+    @include popup(#fff, #ff7d1a, -200%);
+    .done{        
+        display: flex;
+        gap: 0.6em;
+        flex-direction: row;
+        align-items: center;
+        .check {
+            font-size: 3em;
+            height: 90%;
+            color: #ff7d1a;
+        }
+        .alert-text {
+            p{
+                font-size: 0.9em;
+                font-weight: 900;
+            }
+        }
+    }
+}
+.show-alert{
+    right: 1em;
+}
